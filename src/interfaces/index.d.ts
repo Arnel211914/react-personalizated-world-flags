@@ -1,3 +1,7 @@
 export interface FlagProps {
-    text: string
+    code: string
+}
+
+export interface FlagsHook {
+    CO: File
 }
