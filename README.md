@@ -18,7 +18,7 @@ import Flag from 'react-personalizated-world-flags';
 
 const App = () : JSX.Element => {
   return (
-    <Flag code="CO" height="30" width="30" className="colombia" style={{ fill: '#000' }}/>
+    <Flag code="CO" rounded height="30" width="30" className="colombia" style={{ fill: '#000' }}/>
   );
 }
 ```
