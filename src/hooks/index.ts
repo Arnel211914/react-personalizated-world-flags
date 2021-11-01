@@ -1,11 +1,11 @@
-import { FlagsHook } from "../interfaces";
-
 // Images
-import CO from '../assets/CO.png';
+import CO from '../flags/CO';
+import MX from '../flags/MX';
 
-const useFlags = () : FlagsHook => {
+const useFlags = () => {
     return {
         CO,
+        MX,
     };
 }
 
