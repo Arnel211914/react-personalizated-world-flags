@@ -1,3 +1,10 @@
+import { LazyExoticComponent, ReactElement } from "react";
+
 export interface FlagProps {
-    text: string
+    code: string,
+    rounded: boolean
+}
+
+export interface FlagsHook {
+    CO: () => ReactElement
 }

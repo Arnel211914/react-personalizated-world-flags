@@ -1,6 +1,6 @@
 {
   "name": "react-personalizated-world-flags",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library with flags from the whole world customized so you can use in your react project.",
   "author": "Nelson Arevalo",
   "license": "MIT",
@@ -10,6 +10,9 @@
   "source": "src/index.tsx",
   "engines": {
     "node": ">=10"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",

@@ -13,15 +13,13 @@ npm install --save react-personalizated-world-flags
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react';
+import Flag from 'react-personalizated-world-flags';
 
-import MyComponent from 'react-personalizated-world-flags'
-import 'react-personalizated-world-flags/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () : JSX.Element => {
+  return (
+    <Flag code="CO" height="30" width="30" className="colombia" style={{ fill: '#000' }}/>
+  );
 }
 ```
 

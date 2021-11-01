@@ -1,11 +1,15 @@
 import React from "react";
+import useFlags from "../hooks";
 import { FlagProps } from "../interfaces";
 
-const Flag = (props: FlagProps) => {
-    const { text } = props;
+const Flag = (props: FlagProps) : JSX.Element => {
+    const { code } = props;
+    const flagName = code.toUpperCase();
+    const FlagComponent = useFlags()[flagName];
+
 
     return (
-        <h1>{ text }</h1>
+        <FlagComponent {...props}></FlagComponent>
     );
 }
 
