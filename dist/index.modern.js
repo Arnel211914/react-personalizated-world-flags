@@ -1,16 +1,12 @@
 import React from 'react';
 
-const CO = props => {
-  const {
-    rounded
-  } = props;
+var CO = function CO(props) {
+  var rounded = props.rounded;
 
-  const RectFlagComponent = propsRect => {
-    const {
-      width,
-      height,
-      className
-    } = propsRect;
+  var RectFlagComponent = function RectFlagComponent(propsRect) {
+    var width = propsRect.width,
+        height = propsRect.height,
+        className = propsRect.className;
     return React.createElement("svg", Object.assign({
       width: width,
       height: height,
@@ -40,12 +36,10 @@ const CO = props => {
     })));
   };
 
-  const RoundedFlagComponent = propsRounded => {
-    const {
-      width,
-      height,
-      className
-    } = propsRounded;
+  var RoundedFlagComponent = function RoundedFlagComponent(propsRounded) {
+    var width = propsRounded.width,
+        height = propsRounded.height,
+        className = propsRounded.className;
     return React.createElement("svg", Object.assign({
       width: width,
       height: height,
@@ -82,17 +76,13 @@ const CO = props => {
   }
 };
 
-const MX = props => {
-  const {
-    rounded
-  } = props;
+var MX = function MX(props) {
+  var rounded = props.rounded;
 
-  const RectFlagComponent = propsRect => {
-    const {
-      width,
-      height,
-      className
-    } = propsRect;
+  var RectFlagComponent = function RectFlagComponent(propsRect) {
+    var width = propsRect.width,
+        height = propsRect.height,
+        className = propsRect.className;
     return React.createElement("svg", Object.assign({
       width: width,
       height: height,
@@ -122,12 +112,10 @@ const MX = props => {
     })));
   };
 
-  const RoundedFlagComponent = propsRounded => {
-    const {
-      width,
-      height,
-      className
-    } = propsRounded;
+  var RoundedFlagComponent = function RoundedFlagComponent(propsRounded) {
+    var width = propsRounded.width,
+        height = propsRounded.height,
+        className = propsRounded.className;
     return React.createElement("svg", Object.assign({
       width: width,
       height: height,
@@ -164,19 +152,17 @@ const MX = props => {
   }
 };
 
-const useFlags = () => {
+var useFlags = function useFlags() {
   return {
-    CO,
-    MX
+    CO: CO,
+    MX: MX
   };
 };
 
-const Flag = props => {
-  const {
-    code
-  } = props;
-  const flagName = code.toUpperCase();
-  const FlagComponent = useFlags()[flagName];
+var Flag = function Flag(props) {
+  var code = props.code;
+  var flagName = code.toUpperCase();
+  var FlagComponent = useFlags()[flagName];
   return React.createElement(FlagComponent, Object.assign({}, props));
 };
 
